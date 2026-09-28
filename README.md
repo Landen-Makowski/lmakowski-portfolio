@@ -2,7 +2,7 @@
 
 ## About This Project
 
-This repository contains my personal portfolio website, developed as part of Web Development class at MSU.
+This repository contains my personal portfolio website, developed as part of a Web Development class at MSU.
 
 The website will highlight my background in Criminal Justice and Information Science, with a focus on open-source intelligence (OSINT), cybersecurity, and intelligence analysis.
 
