@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta
       name="description"
       content="An OSINT CTF walkthrough demonstrating network forensics and blockchain analysis to trace a Bitcoin transaction."
     >
-
     <meta name="author" content="Landen Makowski">
 
     <link rel="icon" type="image/png" href="images/LMicon.png">
@@ -19,7 +17,6 @@
   <body>
     <header>
       <a href="index.html"><img src="images/LMlogo.png" alt="Makowski Headshot"></a>
-
       <nav>
         <ul>
           <li><a href="index.html#about">About</a></li>
@@ -29,40 +26,26 @@
         </ul>
       </nav>
     </header>
-
     <main>
       <article>
         <header>
           <h1>Following the Money: A Financial Intelligence Investigation</h1>
-
           <p>
             OSINT CTF Walkthrough | Network Forensics &amp;
             Blockchain Analysis
           </p>
         </header>
-
         <section>
           <h2>Challenge Overview</h2>
-
           <p>
-            This challenge involved investigating a suspected
-            ransomware-related cryptocurrency transaction using a
-            provided packet capture (PCAP).
+            This challenge involved investigating a suspected ransomware-related cryptocurrency transaction using a provided packet capture (PCAP).
           </p>
-
           <p>
-            The objective was to identify the receiving Bitcoin
-            wallet address shared by the threat actors and determine
-            which sending wallet transferred approximately 350.21 BTC
-            to that address.
+            The objective was to identify the receiving Bitcoin wallet address shared by the threat actors and determine which sending wallet transferred approximately 350.21 BTC to that address.
           </p>
-
           <p>
-            Using network analysis and publicly available blockchain
-            records, I worked to identify both wallets, trace the
-            transaction, and verify the cryptocurrency amount.
+            Using network analysis and publicly available blockchain records, I worked to identify both wallets, trace the transaction, and verify the cryptocurrency amount.
           </p>
-
           <figure>
             <img
               src="images/challenge-description.png"
@@ -70,28 +53,18 @@
               width="400"
             >
             <figcaption>
-              Figure 1. Original challenge scenario and investigative
-              objectives.
+              Figure 1. Original challenge scenario and investigative objectives.
             </figcaption>
           </figure>
         </section>
-
         <section>
           <h2>Step 1: Examining the Network Traffic</h2>
-
           <p>
-            I began by examining the provided PCAP file using a
-            publicly available PCAP analysis tool.
+            I began by examining the provided PCAP file using a publicly available PCAP analysis tool.
           </p>
-
           <p>
-            The goal was to locate relevant information within the
-            captured network traffic. By reviewing the extracted
-            artifacts and word cloud, I identified cryptocurrency-related
-            information that could serve as a starting point for
-            further investigation.
+            The goal was to locate relevant information within the captured network traffic. By reviewing the extracted artifacts and word cloud, I identified cryptocurrency-related information that could serve as a starting point for further investigation.
           </p>
-
           <figure>
             <img
               src="images/wordcloud.png"
@@ -99,35 +72,21 @@
               width="600"
             >
             <figcaption>
-              Figure 2. Extracted PCAP artifacts displayed as a word
-              cloud.
+              Figure 2. Extracted PCAP artifacts displayed as a word cloud.
             </figcaption>
           </figure>
         </section>
-
         <section>
           <h2>Step 2: Investigating the Bitcoin Transaction</h2>
-
           <p>
-            After identifying the relevant Bitcoin address, I used
-            a public blockchain explorer to investigate its
-            associated transaction history.
+            After identifying the relevant Bitcoin address, I used a public blockchain explorer to investigate its associated transaction history.
           </p>
-
           <p>
-            Blockchain explorers provide access to publicly recorded
-            transactions, allowing analysts to examine transaction
-            inputs, outputs, timestamps, and cryptocurrency amounts.
+            Blockchain explorers provide access to publicly recorded transactions, allowing analysts to examine transaction inputs, outputs, timestamps, and cryptocurrency amounts.
           </p>
-
           <p>
-            I examined the receiving wallet's transaction history
-            to locate the transfer of approximately 350.21 BTC.
-            From there, I traced the transaction backward to
-            identify the sending wallet responsible for transferring
-            the funds.
+            I examined the receiving wallet's transaction history to locate the transfer of approximately 350.21 BTC. From there, I traced the transaction backward to identify the sending wallet responsible for transferring the funds.
           </p>
-
           <figure>
             <img
               src="images/bitcoin.png"
@@ -135,88 +94,55 @@
               width="800"
             >
             <figcaption>
-              Figure 3. Blockchain transaction history used to trace
-              the transfer between wallets.
+              Figure 3. Blockchain transaction history used to trace the transfer between wallets.
             </figcaption>
           </figure>
         </section>
-
         <section>
           <h2>Step 3: Verifying the Financial Information</h2>
-
           <p>
-            Once both wallet addresses were identified, I examined
-            the blockchain transaction details to verify that the
-            transfer matched the amount specified in the challenge.
+            Once both wallet addresses were identified, I examined the blockchain transaction details to verify that the transfer matched the amount specified in the challenge.
           </p>
-
           <p>
-            The blockchain record showed a transfer of
-            350.21271578 BTC, approximately 350.21 BTC.
+            The blockchain record showed a transfer of 350.21271578 BTC, approximately 350.21 BTC.
           </p>
-
           <p>
-            I compared the transaction amount and associated wallet
-            addresses against the original challenge information
-            to confirm that I had identified the relevant transaction.
+            I compared the transaction amount and associated wallet addresses against the original challenge information to confirm that I had identified the relevant transaction.
           </p>
         </section>
-
         <section>
           <h2>Investigation Results</h2>
-
           <h3>Receiving Wallet</h3>
-
           <p>
             <code>14Q5xgBHAkWxDVrnHautcm4PPGmy5cfw6b</code>
           </p>
-
           <h3>Sending Wallet</h3>
-
           <p>
             <code>bc1q3hzthu4dygxsusjymkmpe8sldpq2wuhzqy2ecv</code>
           </p>
-
           <h3>Verified Transaction Amount</h3>
-
           <p>350.21271578 BTC (approximately 350.21 BTC).</p>
-
           <p>
-            The blockchain records established the relationship
-            between the sending and receiving wallets and showed
-            the subsequent movement of funds from the receiving address.
+            The blockchain records established the relationship between the sending and receiving wallets and showed the subsequent movement of funds from the receiving address.
           </p>
         </section>
-
         <section>
           <h2>Key Takeaway</h2>
-
           <p>
-            This challenge demonstrated how network forensics and
-            open-source financial intelligence can complement one another.
+            This challenge demonstrated how network forensics and open-source financial intelligence can complement one another.
           </p>
-
           <p>
-            By extracting relevant artifacts from network traffic
-            and examining publicly accessible blockchain records,
-            I was able to identify both sides of a cryptocurrency
-            transaction and turn raw technical data into a structured
-            financial intelligence finding.
+            By extracting relevant artifacts from network traffic and examining publicly accessible blockchain records, I was able to identify both sides of a cryptocurrency transaction and turn raw technical data into a structured financial intelligence finding.
           </p>
-
           <p>
-            It also reinforced the importance of verifying information
-            across multiple sources rather than relying on a single
-            piece of evidence.
+            It also reinforced the importance of verifying information across multiple sources rather than relying on a single piece of evidence.
           </p>
         </section>
       </article>
-
       <p>
         <a href="index.html#projects">Back to Projects</a>
       </p>
     </main>
-
     <footer>
       <p>&copy; 2026 Landen Makowski</p>
     </footer>
