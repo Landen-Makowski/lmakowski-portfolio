@@ -39,54 +39,72 @@ I am particularly interested in applying these skills to intelligence and securi
 
 ---
 
-## Featured Project: OSINT CTF Walkthrough
+## Featured Project: Following the Money
 
-### Project Overview
+### Financial Intelligence Investigation
+**OSINT CTF Walkthrough | Network Forensics & Blockchain Analysis**
 
-This project documents my investigation of an open-source intelligence Capture the Flag (CTF) challenge.
+### Challenge Overview
 
-The walkthrough demonstrates how publicly available information can be used to solve an investigative problem through structured research, evidence analysis, and verification.
+This challenge involved investigating a suspected ransomware-related cryptocurrency transaction using a provided packet capture (PCAP).
 
-The project highlights the investigative process and methodology used to reach a conclusion.
+The objective was to identify the receiving Bitcoin wallet address shared by the threat actors and determine which sending wallet transferred approximately 350.21 BTC to that address.
 
-### Challenge Information
+Using network analysis and publicly available blockchain records, I worked to identify both wallets, trace the transaction, and verify the cryptocurrency amount.
 
-Challenge Title: placeholder
+**Image:** Challenge description screenshot.
 
-Challenge Source: placeholder
+### Step 1: Examining the Network Traffic
 
-Challenge Category: placeholder
+I began by examining the provided PCAP file using a publicly available PCAP analysis tool.
 
-Challenge Objective:
-placeholder
+The goal was to locate relevant information within the captured network traffic. By reviewing the extracted artifacts and word cloud, I identified cryptocurrency-related information that could serve as a starting point for further investigation.
 
-### Initial Information
+**Image:** PCAP word cloud showing relevant extracted artifacts.
 
-placeholder
+### Step 2: Investigating the Bitcoin Transaction
 
-### Investigation Process
+After identifying the relevant Bitcoin address, I used a public blockchain explorer to investigate its associated transaction history.
 
-1. Initial assessment of the provided materials.
-2. Identification of potential investigative leads.
-3. Collection of relevant publicly available information.
-4. Analysis and cross-referencing of findings.
-5. Verification of the final conclusion.
+Blockchain explorers provide access to publicly recorded transactions, allowing analysts to examine transaction inputs, outputs, timestamps, and cryptocurrency amounts.
 
-### Tools and Resources
+I examined the receiving wallet's transaction history to locate the transfer of approximately 350.21 BTC. From there, I traced the transaction backward to identify the sending wallet responsible for transferring the funds.
 
-Tools, websites, and techniques used
+**Image:** Blockchain explorer showing the sending wallet, receiving wallet, and transaction amount.
 
-### Evidence and Findings
+### Step 3: Verifying the Financial Information
 
-placeholder
+Once both wallet addresses were identified, I examined the blockchain transaction details to verify that the transfer matched the amount specified in the challenge.
 
-### Final Result
+The blockchain record showed a transfer of 350.21271578 BTC, approximately 350.21 BTC.
 
-placeholder
+I compared the transaction amount and associated wallet addresses against the original challenge information to confirm that I had identified the relevant transaction.
 
-### Lessons Learned
+### Investigation Results
 
-placeholder
+The investigation identified the following Bitcoin wallets:
+
+**Receiving Wallet:**
+
+14Q5xgBHAkWxDVrnHautcm4PPGmy5cfw6b
+
+**Sending Wallet:**
+
+bc1q3hzthu4dygxsusjymkmpe8sldpq2wuhzqy2ecv
+
+**Verified Transaction Amount:**
+
+350.21271578 BTC (approximately 350.21 BTC)
+
+The blockchain records established the relationship between the sending and receiving wallets and showed the subsequent movement of funds from the receiving address.
+
+### Key Takeaway
+
+This challenge demonstrated how network forensics and open-source financial intelligence can complement one another.
+
+By extracting relevant artifacts from network traffic and examining publicly accessible blockchain records, I was able to identify both sides of a cryptocurrency transaction and turn raw technical data into a structured financial intelligence finding.
+
+It also reinforced the importance of verifying information across multiple sources rather than relying on a single piece of evidence.
 
 ---
 
