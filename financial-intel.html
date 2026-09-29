@@ -38,13 +38,7 @@
         <section>
           <h2>Challenge Overview</h2>
           <p>
-            This challenge involved investigating a suspected ransomware-related cryptocurrency transaction using a provided packet capture (PCAP).
-          </p>
-          <p>
-            The objective was to identify the receiving Bitcoin wallet address shared by the threat actors and determine which sending wallet transferred approximately 350.21 BTC to that address.
-          </p>
-          <p>
-            Using network analysis and publicly available blockchain records, I worked to identify both wallets, trace the transaction, and verify the cryptocurrency amount.
+            This challenge involved investigating a suspected ransomware-related cryptocurrency transaction using a provided packet capture (PCAP). The objective was to identify the receiving Bitcoin wallet address shared by the threat actors and determine which sending wallet transferred approximately 350.21 BTC to that address. Using network analysis and publicly available blockchain records, I worked to identify both wallets, trace the transaction, and verify the cryptocurrency amount.
           </p>
           <figure>
             <img
@@ -60,10 +54,7 @@
         <section>
           <h2>Step 1: Examining the Network Traffic</h2>
           <p>
-            I began by examining the provided PCAP file using a publicly available PCAP analysis tool.
-          </p>
-          <p>
-            The goal was to locate relevant information within the captured network traffic. By reviewing the extracted artifacts and word cloud, I identified cryptocurrency-related information that could serve as a starting point for further investigation.
+            I began by examining the provided PCAP file using a publicly available PCAP analysis tool. The goal was to locate relevant information within the captured network traffic. By reviewing the extracted artifacts and word cloud, I identified a Bitcoin wallet address that could serve as a starting point for further investigation.
           </p>
           <figure>
             <img
@@ -79,13 +70,7 @@
         <section>
           <h2>Step 2: Investigating the Bitcoin Transaction</h2>
           <p>
-            After identifying the relevant Bitcoin address, I used a public blockchain explorer to investigate its associated transaction history.
-          </p>
-          <p>
-            Blockchain explorers provide access to publicly recorded transactions, allowing analysts to examine transaction inputs, outputs, timestamps, and cryptocurrency amounts.
-          </p>
-          <p>
-            I examined the receiving wallet's transaction history to locate the transfer of approximately 350.21 BTC. From there, I traced the transaction backward to identify the sending wallet responsible for transferring the funds.
+            After identifying the relevant Bitcoin address, I used a public blockchain explorer to investigate its associated transaction history. Blockchain explorers provide access to publicly recorded transactions, allowing analysts to examine transaction inputs, outputs, timestamps, and cryptocurrency amounts. I examined the receiving wallet's transaction history to locate the transfer of approximately 350.21 BTC. From there, I traced the transaction backward to identify the sending wallet responsible for transferring the funds.
           </p>
           <figure>
             <img
@@ -101,13 +86,7 @@
         <section>
           <h2>Step 3: Verifying the Financial Information</h2>
           <p>
-            Once both wallet addresses were identified, I examined the blockchain transaction details to verify that the transfer matched the amount specified in the challenge.
-          </p>
-          <p>
-            The blockchain record showed a transfer of 350.21271578 BTC, approximately 350.21 BTC.
-          </p>
-          <p>
-            I compared the transaction amount and associated wallet addresses against the original challenge information to confirm that I had identified the relevant transaction.
+            Once both wallet addresses were identified, I examined the blockchain transaction details to verify that the transfer matched the amount specified in the challenge. The blockchain record showed a transfer of 350.21271578 BTC, approximately 350.21 BTC. I compared the transaction amount and associated wallet addresses against the original challenge information to confirm that I had identified the relevant transaction.
           </p>
         </section>
         <section>
