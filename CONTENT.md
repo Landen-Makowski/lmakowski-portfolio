@@ -15,7 +15,7 @@ A personal portfolio showcasing my academic background, technical interests, and
 
 ### Introduction
 
-Hello! My name is Landen Makowski, and I am a Criminal Justice and Information Science student at Michigan State University with interests in open-source intelligence (OSINT), cybersecurity, and intelligence analysis.
+My name is Landen Makowski, and I am a Criminal Justice and Information Science student at Michigan State University with interests in open-source intelligence (OSINT), cybersecurity, and intelligence analysis.
 
 This portfolio documents my academic and technical development while showcasing projects that demonstrate investigative research, problem-solving, and analytical skills.
 
@@ -29,7 +29,7 @@ I am particularly interested in applying these skills to intelligence and securi
 
 ### Skills and Areas of Interest
 
-- Open-source intelligence (OSINT)
+- Open-source intelligence (OSINT) (What is OSINT Link)
 - Cyber threat intelligence
 - Digital investigations
 - Geolocation and image analysis
@@ -39,7 +39,7 @@ I am particularly interested in applying these skills to intelligence and securi
 
 ---
 
-## Featured Project: Following the Money
+## Featured Project: Following the Money (Card)
 
 ### Financial Intelligence Investigation
 **OSINT CTF Walkthrough | Network Forensics & Blockchain Analysis**
@@ -121,12 +121,12 @@ Additional projects may include:
 
 ## Contact
 
-LinkedIn: placeholder
-
 Email: placeholder
+
+LinkedIn: placeholder
 
 ---
 
 ## Footer
 
-Copyright 2026 Landen Makowski.
+Copyright 2026 Landen Makowski
