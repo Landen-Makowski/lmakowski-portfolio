@@ -174,6 +174,18 @@ figcaption {
   margin-top: 0;
 }
 
+/*
+AI assistance:
+Prompt: Create a mobile-first responsive CSS Grid for the #projects
+section only. Use one column by default, two columns at 600px,
+and three columns at 1000px. Keep the Projects heading spanning
+the full row. Do not modify any HTML.
+
+Output used:
+Added the #projects grid, full-width heading placement,
+and responsive column changes at 600px and 1000px.
+*/
+
 #projects {
   display: grid;
   grid-template-columns: 1fr;
@@ -193,6 +205,71 @@ figcaption {
 @media (min-width: 1000px) {
   #projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*
+AI assistance:
+Prompt: Create a desktop-only full-page CSS Grid layout beginning at
+1100px for my existing portfolio. Keep the mobile layout unchanged.
+At desktop sizes, turn the existing header into a 240px left sidebar,
+place main content in the second column, and change the existing
+Flexbox navigation from horizontal to vertical. Modify CSS only and
+do not change any HTML.
+
+Output used:
+Added a two-column body grid at 1100px, positioned the header as a
+left sidebar, placed main and footer in the second column, changed
+the navigation flex direction to column, and centered the logo within
+the sidebar with adjusted spacing.
+*/
+
+@media (min-width: 1100px) {
+  body {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+  }
+
+  body > header {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  body > main {
+    grid-column: 2;
+    margin: 0 auto;
+  }
+
+  body > footer {
+    grid-column: 2;
+  }
+
+   nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: 1100px) {
+   body > header > a {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .intro p {
+    max-width: 750px;
   }
 }
 
