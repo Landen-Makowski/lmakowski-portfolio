@@ -386,3 +386,25 @@ code {
   border-radius: 4px;
   overflow-wrap: anywhere;
 }
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  background: var(--dark);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 4px;
+}

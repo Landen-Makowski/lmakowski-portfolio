@@ -2,7 +2,7 @@
 
 I tested the published portfolio using PageSpeed Insights.
 
-- Performance: 99
+- Performance: 100
 - Accessibility: 100
 - Best Practices: 100
 - SEO: 100
