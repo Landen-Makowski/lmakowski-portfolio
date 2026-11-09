@@ -141,7 +141,8 @@ figure {
   padding: 1rem;
   background-color: var(--white);
   border: 1px solid var(--border-color);
-  border-radius: 10px;
+  border-top: 4px solid var(--teal);
+  border-radius: 12px;
 }
 
 figure img {
@@ -545,9 +546,9 @@ button:focus-visible {
 /* Figures for finance page*/
 .dark-mode figure {
   background-color: #2a2f32;
+  color: var(--white);
   border: 1px solid #3b4246;
   border-top: 4px solid var(--teal);
-  border-radius: 12px;
 }
 
 .dark-mode figure img {
@@ -566,4 +567,16 @@ button:focus-visible {
   border-radius: 6px;
   padding: 0.35rem 0.55rem;
   overflow-wrap: anywhere;
+}
+
+.dark-mode nav a {
+  color: var(--white);
+}
+
+.dark-mode nav a:hover {
+  color: var(--teal);
+}
+
+.dark-mode .nav-icon {
+  color: var(--white);
 }

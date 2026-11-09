@@ -32,3 +32,23 @@ ScrollReveal().reveal("#projects article", {
   origin: "bottom",
   interval: 150
 });
+
+ScrollReveal().reveal(".case-study-header", {
+  distance: "25px",
+  duration: 800,
+  origin: "bottom"
+});
+
+ScrollReveal().reveal("figure", {
+  distance: "30px",
+  duration: 800,
+  origin: "bottom",
+  interval: 150
+});
+
+ScrollReveal().reveal("details", {
+  distance: "20px",
+  duration: 700,
+  origin: "bottom",
+  interval: 100
+});
