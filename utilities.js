@@ -1,4 +1,8 @@
-/*ChatGPT helped me create the theme-toggle JavaScript using
+/*Prompt: Help me add a dark/light mode toggle to my portfolio using a separate JavaScript file. 
+Use DOM selection and an event listener, and make sure the button text updates to reflect the active theme. 
+I also want the user’s selected theme to persist after the page is refreshed.
+
+ChatGPT helped me create the theme-toggle JavaScript using
 document.getElementById(), addEventListener(), classList.toggle(),
 conditional button text, and localStorage to remember the selected
 theme after refresh. I also adapted the CSS for the dark-mode palette.
