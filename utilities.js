@@ -1,5 +1,8 @@
-// ChatGPT helped me add localStorage so the user's dark/light
-// theme preference is remembered after the page is refreshed.
+/*ChatGPT helped me create the theme-toggle JavaScript using
+document.getElementById(), addEventListener(), classList.toggle(),
+conditional button text, and localStorage to remember the selected
+theme after refresh. I also adapted the CSS for the dark-mode palette.
+*/
 
 const themeToggle = document.getElementById("theme-toggle");
 
