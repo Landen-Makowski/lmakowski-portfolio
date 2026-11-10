@@ -606,3 +606,51 @@ I also want the user’s selected theme to persist after the page is refreshed.
   background-color: var(--teal);
   color: var(--dark);
 }
+
+/* AI prompt: Help me make the captions of the lightbox centered and toggle
+with the theme changes from light to dark
+/* GLightbox caption styling */
+.gslide-description {
+  font-family: "Solway", serif;
+  text-align: center;
+}
+
+.gslide-description .gslide-desc {
+  font-family: "Solway", serif;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.glightbox-container .gslide-description {
+  background-color: var(--white);
+}
+
+/* GLightbox caption - dark mode */
+.dark-mode .glightbox-container .gslide-description {
+  background-color: #2a2f32;
+}
+
+.dark-mode .gslide-description .gslide-desc {
+  color: var(--white);
+}
+
+/*Override lightbox to use my font*/
+.glightbox-container .gslide-description,
+.glightbox-container .gslide-description .gslide-desc {
+  font-family: "Solway", serif !important;
+  text-align: center;
+}
+
+/* Allows the sticky function in the nav bar to work
+while in the lightbox */
+@media (min-width: 1100px) {
+  .glightbox-open body > header,
+  body.glightbox-open > header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+}

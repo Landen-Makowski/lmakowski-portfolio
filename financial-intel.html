@@ -16,6 +16,12 @@
 
     <link rel="icon" type="image/png" href="images/Landen_Logo.png">
 
+    <!--GLightbox Picture Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    >
+
     <title>Following the Money | Landen Makowski</title>
   </head>
 
@@ -75,11 +81,16 @@
             This challenge involved investigating a suspected ransomware-related cryptocurrency transaction using a provided packet capture (PCAP). The objective was to identify the receiving Bitcoin wallet address shared by the threat actors and determine which sending wallet transferred approximately 350.21 BTC to that address. Using network analysis and publicly available blockchain records, I worked to identify both wallets, trace the transaction, and verify the cryptocurrency amount.
           </p>
           <figure>
+            <a
+              href="images/challenge-description.png"
+              class="glightbox"
+              data-gallery="financial-intel"
+              data-description="Figure 1. Original challenge scenario and investigative objectives.">
             <img
               src="images/challenge-description.png"
               alt="Original financial intelligence CTF scenario describing the ransomware investigation and its objectives."
-              width="400"
-            >
+              width="400">
+            </a>
             <figcaption>
               Figure 1. Original challenge scenario and investigative objectives.
             </figcaption>
@@ -102,11 +113,16 @@
             I began by examining the provided PCAP file using a publicly available PCAP analysis tool. The goal was to locate relevant information within the captured network traffic. By reviewing the extracted artifacts and word cloud, I identified a Bitcoin wallet address that could serve as a starting point for further investigation.
           </p>
           <figure>
-            <img
-              src="images/wordcloud.png"
-              alt="Word cloud extracted from the PCAP containing cryptocurrency-related terms and a Bitcoin address."
-              width="600"
-            >
+            <a
+              href="images/wordcloud.png"
+              class="glightbox"
+              data-gallery="financial-intel"
+              data-description="Figure 2. Extracted PCAP artifacts displayed as a word cloud.">
+              <img
+                src="images/wordcloud.png"
+                alt="Word cloud extracted from the PCAP containing cryptocurrency-related terms and a Bitcoin address."
+                width="600">
+            </a>
             <figcaption>
               Figure 2. Extracted PCAP artifacts displayed as a word cloud.
             </figcaption>
@@ -125,11 +141,16 @@
             </p>
             </details>
           <figure>
-            <img
-              src="images/bitcoin.png"
-              alt="Blockchain explorer showing the incoming and outgoing Bitcoin transactions, associated addresses, and transfer amounts."
-              width="800"
-            >
+            <a
+              href="images/bitcoin.png"
+              class="glightbox"
+              data-gallery="financial-intel"
+              data-description="Figure 3. Blockchain transaction history used to trace the transfer between wallets.">
+              <img
+                src="images/bitcoin.png"
+                alt="Blockchain explorer showing the incoming and outgoing Bitcoin transactions, associated addresses, and transfer amounts."
+                width="800">
+            </a>
             <figcaption>
               Figure 3. Blockchain transaction history used to trace the transfer between wallets.
             </figcaption>
@@ -178,6 +199,7 @@
       <p>&copy; 2026 Landen Makowski</p>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="utilities.js"></script>
   </body>
 </html>

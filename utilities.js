@@ -53,3 +53,8 @@ ScrollReveal().reveal(
     interval: 100
   }
 );
+
+/*GLightBox Feature*/
+const lightbox = GLightbox({
+  selector: ".glightbox"
+});
