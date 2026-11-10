@@ -27,11 +27,15 @@ themeToggle.addEventListener("click", function () {
   }
 });
 
-ScrollReveal().reveal("#about, #skills, #contact", {
-  distance: "25px",
-  duration: 800,
-  origin: "bottom"
-});
+ScrollReveal().reveal(
+  ".intro, #about, #skills, #projects, #contact, .case-study-header, figure, details, address",
+  {
+    distance: "25px",
+    duration: 800,
+    origin: "bottom",
+    interval: 100
+  }
+);
 
 ScrollReveal().reveal("#projects article", {
   distance: "30px",
@@ -40,22 +44,12 @@ ScrollReveal().reveal("#projects article", {
   interval: 150
 });
 
-ScrollReveal().reveal(".case-study-header", {
-  distance: "25px",
-  duration: 800,
-  origin: "bottom"
-});
-
-ScrollReveal().reveal("figure", {
-  distance: "30px",
-  duration: 800,
-  origin: "bottom",
-  interval: 150
-});
-
-ScrollReveal().reveal("details", {
-  distance: "20px",
-  duration: 700,
-  origin: "bottom",
-  interval: 100
-});
+ScrollReveal().reveal(
+  ".case-study-header, main section, figure, details, address",
+  {
+    distance: "25px",
+    duration: 800,
+    origin: "bottom",
+    interval: 100
+  }
+);
