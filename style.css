@@ -517,13 +517,13 @@ button:focus-visible {
 /* Dark mode toggle */
 .dark-mode #theme-toggle {
   background-color: transparent;
-  color: var(--white);
-  border-color: var(--teal);
+  color: var(--dark);
+  border-color: var(--dark);
 }
 
 .dark-mode #theme-toggle:hover {
-  background-color: var(--teal);
-  color: var(--dark);
+  background-color: var(--dark);
+  color: var(--white);
 }
 
 
@@ -579,4 +579,27 @@ button:focus-visible {
 
 .dark-mode .nav-icon {
   color: var(--white);
+}
+
+/* Dark mode navigation/sidebar */
+.dark-mode > header {
+  background-color: var(--teal);
+  color: var(--dark);
+}
+
+.dark-mode > header nav a {
+  color: var(--dark);
+}
+
+.dark-mode > header .nav-icon {
+  color: var(--dark);
+}
+
+.dark-mode > header nav a:hover {
+  color: var(--white);
+}
+
+.dark-mode footer {
+  background-color: var(--teal);
+  color: var(--dark);
 }
