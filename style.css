@@ -410,6 +410,9 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
+/*Prompt for AI: Help me add a dark/light mode toggle to my portfolio using a separate JavaScript file. 
+Use DOM selection and an event listener, and make sure the button text updates to reflect the active theme. 
+I also want the user’s selected theme to persist after the page is refreshed.
 /* Theme Toggle*/
 /* Dark mode */
 .dark-mode {
