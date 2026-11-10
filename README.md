@@ -2,11 +2,9 @@
 
 ## About This Project
 
-This repository contains my personal portfolio website, developed as part of a Web Development class at MSU.
+This repository contains my personal portfolio website which highlights my background in Criminal Justice and Information Science, with a focus on open-source intelligence (OSINT), cybersecurity, and intelligence analysis.
 
-The website will highlight my background in Criminal Justice and Information Science, with a focus on open-source intelligence (OSINT), cybersecurity, and intelligence analysis.
-
-The primary feature of this portfolio will be a walkthrough of an OSINT Capture the Flag (CTF) challenge. Through this project, I aim to demonstrate my investigative process, research methodology, and ability to collect, analyze, and verify publicly available information.
+I'm excited to showcase walkthroughs of different OSINT investigations and projects that I have worked on.
 
 ## Featured Project: OSINT CTF Walkthrough
 

@@ -641,7 +641,7 @@ with the theme changes from light to dark
   text-align: center;
 }
 
-/* Allows the sticky function in the nav bar to work
+/* Allows the sticky function in the navigation bar to work
 while in the lightbox */
 @media (min-width: 1100px) {
   .glightbox-open body > header,
