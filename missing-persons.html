@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+      name="description"
+      content="An OSINT case analysis using public CCTV footage, geolocation, mapping, and open-source research to reconstruct the final known movements of a missing person."
+    >
+
+    <meta name="theme-color" content="#182638">
+
+    <meta
+      name="author"
+      content="Landen Makowski"
+    >
+
+    <!-- CSS Link -->
+    <link
+      rel="stylesheet"
+      href="style.css"
+    >
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/Landen_Logo.png"
+    >
+
+    <!-- GLightbox Picture Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    >
+
+    <title>
+      OSINT Missing Persons Case Analysis | Landen Makowski
+    </title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Landen_Logo.png"
+          alt="LM logo - Landen Makowski"
+          width="200"
+        >
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="index.html#about">
+              <span class="nav-icon">♙</span>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#skills">
+              <span class="nav-icon">🛠</span>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#projects">
+              <span class="nav-icon">◇</span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#contact">
+              <span class="nav-icon">✉</span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+        <button
+          id="theme-toggle"
+          type="button"
+        >
+          ☾ Dark Mode
+        </button>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header class="case-study-header">
+          <h1>
+            Reconstructing a Disappearance:
+            An OSINT Missing Persons Case Analysis
+          </h1>
+          <p>
+            OSINT Case Study | CCTV Analysis, Geolocation &amp; Timeline Reconstruction
+          </p>
+        </header>
+        <section>
+          <h2>Case Overview</h2>
+          <p>
+            This project examined the disappearance of Trevor Deely, a
+            22-year-old man who went missing in Dublin, Ireland, on
+            December 8, 2000.
+          </p>
+          <p>
+            Using publicly available information, I reconstructed his final
+            known movements and examined the available CCTV footage,
+            geographic locations, media reporting, and other open-source
+            information related to the case.
+          </p>
+          <p>
+            The goal was not to claim a solution to the disappearance.
+            Instead, the project focused on organizing the available
+            information, identifying gaps in the known timeline, and
+            demonstrating how OSINT methods can be applied to a real
+            unresolved case.
+          </p>
+        </section>
+        <aside aria-labelledby="missing-tools-heading">
+          <h2 id="missing-tools-heading">
+            Investigation Resources
+          </h2>
+          <p>
+            The investigation relied entirely on publicly available
+            information and open-source research techniques.
+          </p>
+          <ul>
+            <li>Public CCTV footage</li>
+            <li>Google Earth and mapping tools</li>
+            <li>Historical imagery</li>
+            <li>Official police information</li>
+            <li>News archives</li>
+            <li>Public forums and case discussions</li>
+          </ul>
+        </aside>
+        <section>
+          <h2>Step 1: Mapping the Known Locations</h2>
+          <p>
+            I began by identifying the major locations connected to Trevor's
+            final known movements. These included his workplace, the venues
+            he visited during the evening, his apartment, and the location
+            of his final confirmed CCTV sighting.
+          </p>
+          <p>
+            Mapping these locations helped establish the geographic context
+            of the case and made it easier to compare the known timeline
+            against the route he appeared to be taking through Dublin.
+          </p>
+          <figure>
+            <a
+              href="images/missing-persons-map.png"
+              class="glightbox"
+              data-gallery="missing-persons"
+              data-description="Figure 2. Map of major points of interest connected to Trevor Deely's final known movements."
+            >
+              <img
+                src="images/missing-persons-map.png"
+                alt="Map of Dublin showing Trevor Deely's workplace, nightlife locations, apartment, and last known location."
+                width="800"
+              >
+            </a>
+            <figcaption>
+              Figure 2. Major points of interest connected to the case.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Step 2: Reconstructing the Timeline</h2>
+          <p>
+            Using public reporting and available CCTV footage, I created a
+            structured timeline of Trevor's final known movements.
+          </p>
+          <p>
+            After leaving a nightclub at approximately 3:25 a.m., Trevor
+            returned to his workplace on Wilton Terrace. CCTV footage shows
+            him arriving at the gate shortly after 3:35 a.m. and entering
+            the building. He left approximately 27 minutes later and
+            continued walking through the area.
+          </p>
+          <p>
+            Shortly after leaving work, Trevor placed a call to a childhood
+            friend. He was later captured by another CCTV camera at
+            approximately 4:14 a.m. walking in the direction of his
+            apartment. This became his last confirmed sighting.
+          </p>
+        </section>
+        <section>
+          <h2>Step 3: Analyzing the Workplace CCTV</h2>
+          <p>
+            One of the most significant portions of the available footage
+            shows an unidentified man near the entrance to Trevor's
+            workplace.
+          </p>
+          <p>
+            I reviewed the timing and movement of both individuals across
+            the available camera angles. The footage shows Trevor passing
+            the individual, later arriving at the gate, and briefly
+            occupying the same area before Trevor entered the building.
+          </p>
+          <p>
+            The available footage does not establish the unidentified man's
+            involvement in Trevor's disappearance. For this analysis, the
+            footage was treated as an unresolved point of interest rather
+            than evidence of responsibility.
+          </p>
+          <figure>
+            <a
+              href="images/missing-persons-gate-cctv.png"
+              class="glightbox"
+              data-gallery="missing-persons"
+              data-description="Figure 3. CCTV footage showing Trevor Deely and an unidentified individual near the workplace entrance."
+            >
+              <img
+                src="images/missing-persons-gate-cctv.png"
+                alt="CCTV stills showing Trevor Deely and an unidentified man near the entrance to his workplace."
+                width="700"
+              >
+            </a>
+            <figcaption>
+              Figure 3. CCTV sequence near the workplace entrance.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Step 4: Mapping Trevor's Final Known Route</h2>
+          <p>
+            I then mapped the route between Trevor's workplace and his final
+            confirmed CCTV location.
+          </p>
+          <p>
+            This helped visualize the portion of his journey that can be
+            supported by publicly available evidence and highlighted the
+            point at which the confirmed timeline ends.
+          </p>
+          <figure>
+            <a
+              href="images/missing-persons-route.png"
+              class="glightbox"
+              data-gallery="missing-persons"
+              data-description="Figure 4. Reconstructed route between Trevor Deely's workplace and his last confirmed CCTV location."
+            >
+              <img
+                src="images/missing-persons-route.png"
+                alt="Map tracing Trevor Deely's route from his workplace toward his last confirmed location."
+                width="800"
+              >
+            </a>
+            <figcaption>
+              Figure 4. Reconstructed path from the workplace to the last
+              confirmed location.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Step 5: Reviewing the Final CCTV Sighting</h2>
+          <p>
+            The final confirmed CCTV footage shows Trevor walking past the
+            former AIB bank near Baggot Street Bridge and Haddington Road at
+            approximately 4:14 a.m.
+          </p>
+          <p>
+            Approximately thirty seconds later, another individual dressed
+            in dark clothing was recorded walking in the same direction.
+            Public reporting later indicated that this second individual
+            was identified and investigators were satisfied that he was not
+            connected to Trevor's disappearance.
+          </p>
+          <figure>
+            <a
+              href="images/missing-persons-last-sighting.png"
+              class="glightbox"
+              data-gallery="missing-persons"
+              data-description="Figure 5. Final confirmed CCTV sighting of Trevor Deely and the second individual recorded afterward."
+            >
+              <img
+                src="images/missing-persons-last-sighting.png"
+                alt="CCTV images showing Trevor Deely during his final confirmed sighting and another individual walking in the same direction afterward."
+                width="700"
+              >
+            </a>
+            <figcaption>
+              Figure 5. Final confirmed CCTV footage used in the timeline
+              reconstruction.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Step 6: Examining Alternative Routes</h2>
+          <p>
+            One question raised during the analysis was whether Trevor
+            intended to travel directly home after his final CCTV sighting.
+          </p>
+          <p>
+            A publicly discussed possibility was that he may have continued
+            toward a nearby 24-hour shop before returning to his apartment.
+            Mapping this potential route showed that his last confirmed
+            direction of travel was compatible with more than one possible
+            destination.
+          </p>
+          <p>
+            This did not establish where Trevor went after the final CCTV
+            footage. Instead, it demonstrated why the available geographic
+            information alone cannot determine his destination.
+          </p>
+          <figure>
+            <a
+              href="images/missing-persons-smoke-shop.png"
+              class="glightbox"
+              data-gallery="missing-persons"
+              data-description="Figure 6. Map showing alternative routes considered after Trevor Deely's final confirmed sighting."
+            >
+              <img
+                src="images/missing-persons-smoke-shop.png"
+                alt="Map comparing possible routes from Trevor Deely's final known location toward his apartment and a nearby shop."
+                width="800"
+              >
+            </a>
+            <figcaption>
+              Figure 6. Alternative routes considered after the final
+              confirmed CCTV sighting.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Investigative Questions</h2>
+          <p>
+            The reconstruction raised several questions that could not be
+            resolved using publicly available information.
+          </p>
+          <ul>
+            <li>
+              What happened after Trevor left the area covered by the final
+              publicly available CCTV camera?
+            </li>
+            <li>
+              Did additional CCTV systems exist along his possible routes?
+            </li>
+            <li>
+              What destination was Trevor actually traveling toward after
+              his final confirmed sighting?
+            </li>
+            <li>
+              Could environmental conditions, traffic, or the nearby canal
+              have played a role in his disappearance?
+            </li>
+            <li>
+              Could additional historical imagery or newly recovered
+              records provide information that was unavailable at the time?
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Investigation Limits</h2>
+          <p>
+            This case demonstrated an important limitation of open-source
+            intelligence: publicly available information can help organize
+            and verify known evidence, but it cannot always fill gaps where
+            evidence does not exist.
+          </p>
+          <p>
+            Much of the CCTV footage from the area was no longer available,
+            and the publicly accessible material does not establish what
+            happened after Trevor's final confirmed sighting.
+          </p>
+          <p>
+            As a result, this project should be viewed as an OSINT-based
+            reconstruction of the known timeline rather than an attempt to
+            identify a definitive explanation for the disappearance.
+          </p>
+        </section>
+        <section>
+          <h2>Key Takeaway</h2>
+          <p>
+            This project demonstrated how OSINT techniques can be applied to
+            an unresolved real-world case without overstating what the
+            available evidence can support.
+          </p>
+          <p>
+            By combining CCTV analysis, geolocation, route mapping, public
+            records, and media reporting, I was able to create a structured
+            reconstruction of Trevor Deely's final known movements and
+            identify areas where the public timeline remains incomplete.
+          </p>
+          <p>
+            Most importantly, the investigation reinforced the importance
+            of separating verified information from speculation and being
+            willing to conclude that the available evidence is insufficient
+            to answer a question.
+          </p>
+        </section>
+      </article>
+      <p>
+        <a href="index.html#projects">
+          Back to Projects
+        </a>
+      </p>
+    </main>
+    <footer>
+      <p>&copy; 2026 Landen Makowski</p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js">
+    </script>
+    <script src="utilities.js"></script>
+  </body>
+</html>
