@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+      name="description"
+      content="An OSINT geolocation CTF walkthrough demonstrating reverse image searching, social media research, visual verification, and satellite imagery analysis."
+    >
+
+    <meta name="theme-color" content="#182638">
+    <meta name="author" content="Landen Makowski">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/Landen_Logo.png"
+    >
+
+    <!-- GLightbox Picture Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    >
+
+    <title>Geolocating a Security Facility | Landen Makowski</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/Landen_Logo.png"
+          alt="LM logo - Landen Makowski"
+          width="200"
+        >
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="index.html#about">
+              <span class="nav-icon">♙</span>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#skills">
+              <span class="nav-icon">🛠</span>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#projects">
+              <span class="nav-icon">◇</span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#contact">
+              <span class="nav-icon">✉</span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+        <button id="theme-toggle" type="button">
+          ☾ Dark Mode
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header class="case-study-header">
+          <h1>
+            From Visual Clues to Confirmation:
+            Geolocating a Security Facility
+          </h1>
+          <p>
+            OSINT CTF Walkthrough | Geolocation &amp; Visual Verification
+          </p>
+        </header>
+        <section>
+          <h2>Challenge Overview</h2>
+          <p>
+            This challenge provided a single photograph of a location that
+            appeared to be part of a military or security facility. The
+            objective was to determine the exact GPS coordinates of where the
+            photograph was taken, along with the correct city and country.
+          </p>
+          <p>
+            Solving the challenge required identifying visual clues in the
+            original image, searching for related imagery across public
+            sources, and comparing permanent physical features of the site
+            across ground-level and satellite imagery.
+          </p>
+          <figure>
+            <a
+              href="images/geolocation-challenge.png"
+              class="glightbox"
+              data-gallery="geolocation"
+              data-description="Figure 1. Original geolocation challenge and required objectives."
+            >
+              <img
+                src="images/geolocation-challenge.png"
+                alt="Original OSINT geolocation challenge asking for the exact GPS coordinates, city, and country."
+                width="500"
+              >
+            </a>
+            <figcaption>
+              Figure 1. Original geolocation challenge and required objectives.
+            </figcaption>
+          </figure>
+          <figure>
+            <a
+              href="images/geolocation-original.jpeg"
+              class="glightbox"
+              data-gallery="geolocation"
+              data-description="Figure 2. Original image provided for the geolocation investigation."
+            >
+              <img
+                src="images/geolocation-original.jpeg"
+                alt="Original geolocation image showing a paved driveway, gated entrance, vegetation, buildings, and communications tower."
+                width="700"
+              >
+            </a>
+            <figcaption>
+              Figure 2. Original image provided for the geolocation investigation.
+            </figcaption>
+          </figure>
+        </section>
+        <aside aria-labelledby="geo-tools-heading">
+          <h2 id="geo-tools-heading">
+            Investigation Resources
+          </h2>
+          <p>
+            The investigation relied entirely on publicly available sources
+            and visual comparison techniques.
+          </p>
+          <ul>
+            <li>Google reverse image search</li>
+            <li>TikTok</li>
+            <li>YouTube</li>
+            <li>Google Maps and satellite imagery</li>
+            <li>Visual feature comparison</li>
+          </ul>
+        </aside>
+        <section>
+          <h2>Step 1: Examining the Original Image</h2>
+          <p>
+            I began by examining the original photograph for environmental
+            and structural features that could help narrow the location.
+            Several details stood out, including tropical vegetation, a black
+            paved driveway, a gated entrance, a green structure beside the
+            road, red-roofed buildings, and a communications tower in the
+            background.
+          </p>
+          <p>
+            None of these features independently identified the location, but
+            together they provided useful visual references that could later
+            be compared against imagery from other sources.
+          </p>
+          <details>
+            <summary>What is geolocation?</summary>
+            <p>
+              Geolocation is the process of determining where an image,
+              video, or other piece of information originated by examining
+              visual clues, geographic information, maps, satellite imagery,
+              and other publicly available sources.
+            </p>
+          </details>
+        </section>
+        <section>
+          <h2>Step 2: Reverse Image Search and TikTok Pivot</h2>
+          <p>
+            I then used Google reverse image search with the original
+            photograph. This search eventually led to a TikTok video showing
+            a location with several similarities to the challenge image.
+          </p>
+          <p>
+            The black paved path, vegetation, architecture, and landscaping
+            closely resembled the environment visible in the original
+            photograph. The TikTok content became the major turning point in
+            the investigation because it connected the visual environment to
+            the Jakarta Centre for Law Enforcement Cooperation, commonly
+            abbreviated as JCLEC, in Semarang, Indonesia.
+          </p>
+          <figure>
+            <a
+              href="images/geolocation-tiktok.png"
+              class="glightbox"
+              data-gallery="geolocation"
+              data-description="Figure 3. TikTok imagery containing a similar paved walkway, vegetation, and architectural environment."
+            >
+              <img
+                src="images/geolocation-tiktok.png"
+                alt="TikTok screenshot showing a paved path, tropical vegetation, flags, and buildings associated with JCLEC."
+                width="500"
+              >
+            </a>
+
+            <figcaption>
+              Figure 3. TikTok imagery that provided the key lead toward
+              identifying JCLEC.
+            </figcaption>
+          </figure>
+          <figure>
+            <a
+              href="images/geolocation-jclec.png"
+              class="glightbox"
+              data-gallery="geolocation"
+              data-description="Figure 4. Public imagery identifying the Jakarta Centre for Law Enforcement Cooperation."
+            >
+              <img
+                src="images/geolocation-jclec.png"
+                alt="Building marked Jakarta Centre for Law Enforcement Cooperation, or JCLEC."
+                width="700"
+              >
+            </a>
+            <figcaption>
+              Figure 4. Public imagery confirming the identity of the
+              Jakarta Centre for Law Enforcement Cooperation.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Step 3: Corroborating the Location with YouTube</h2>
+          <p>
+            Identifying JCLEC established a strong candidate location, but I
+            still needed to determine whether the exact area shown in the
+            challenge photograph could be found within the facility.
+          </p>
+          <p>
+            I located a YouTube video showing vehicles arriving at the
+            center. The video provided another ground-level perspective of
+            the facility and showed the same entrance area from a different
+            angle.
+          </p>
+          <p>
+            Of particular importance was the ramp and roadway near the
+            entrance. These physical features closely matched the structures
+            visible in the original challenge image and provided an
+            independent source that further supported JCLEC as the correct
+            location.
+          </p>
+          <figure>
+            <a
+              href="images/geolocation-youtube.png"
+              class="glightbox"
+              data-gallery="geolocation"
+              data-description="Figure 5. YouTube imagery showing vehicles approaching the JCLEC entrance and the same ramp visible in the challenge image."
+            >
+              <img
+                src="images/geolocation-youtube.png"
+                alt="YouTube screenshot showing vehicles approaching a ramp and entrance at JCLEC."
+                width="700"
+              >
+            </a>
+            <figcaption>
+              Figure 5. YouTube imagery showing the entrance and ramp from
+              another ground-level perspective.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Step 4: Matching Physical Features</h2>
+          <p>
+            With the facility identified, I compared the original challenge
+            photograph with publicly available map and satellite imagery.
+            Instead of relying only on general similarities, I focused on
+            permanent physical features that could be matched between the
+            different perspectives.
+          </p>
+          <p>
+            The most useful features were the large red-roofed building, the
+            smaller structure and ramp beside the roadway, the gated entrance,
+            and the orientation of the road itself. Their relative positions
+            matched the layout visible from above.
+          </p>
+          <figure>
+            <a
+              href="images/geolocation-comparison.png"
+              class="glightbox"
+              data-gallery="geolocation"
+              data-description="Figure 6. Annotated challenge image identifying physical features used for comparison."
+            >
+              <img
+                src="images/geolocation-comparison.png"
+                alt="Annotated original photograph marking the main building, ramp structure, and gated roadway."
+                width="700"
+              >
+            </a>
+
+            <figcaption>
+              Figure 6. Key structures identified in the original photograph
+              for comparison with satellite imagery.
+            </figcaption>
+          </figure>
+          <figure>
+            <a
+              href="images/geolocation-satellite.png"
+              class="glightbox"
+              data-gallery="geolocation"
+              data-description="Figure 7. Satellite view of JCLEC showing the same building, ramp, and roadway configuration."
+            >
+              <img
+                src="images/geolocation-satellite.png"
+                alt="Satellite imagery of JCLEC showing the relative locations of buildings, the entrance ramp, and roadway."
+                width="700"
+              >
+            </a>
+            <figcaption>
+              Figure 7. Satellite imagery showing the matching site layout
+              and entrance area.
+            </figcaption>
+          </figure>
+        </section>
+        <section>
+          <h2>Step 5: Determining the Exact Coordinates</h2>
+          <p>
+            Once the ground-level imagery and satellite view were aligned, I
+            focused on the specific roadway position where the original
+            photograph would have been taken. The matching ramp, gate,
+            building orientation, and surrounding structures allowed the
+            location to be narrowed to the entrance area of JCLEC.
+          </p>
+          <p>
+            Comparing these features with the map location produced the final
+            coordinates:
+          </p>
+          <p>
+            <code>-7.01981, 110.40844</code>
+          </p>
+        </section>
+        <section>
+          <h2>Investigation Results</h2>
+          <h3>Facility</h3>
+          <p>
+            Jakarta Centre for Law Enforcement Cooperation (JCLEC)
+          </p>
+          <h3>City and Country</h3>
+          <p>
+            Semarang, Indonesia
+          </p>
+          <h3>GPS Coordinates</h3>
+          <p>
+            <code>-7.01981, 110.40844</code>
+          </p>
+          <h3>Accepted Flag</h3>
+          <p>
+            <code>
+              OSINT{-7.01981, 110.40844 — Semarang_Indonesia}
+            </code>
+          </p>
+        </section>
+        <section>
+          <h2>Key Takeaway</h2>
+          <p>
+            This investigation demonstrated the value of combining multiple
+            forms of open-source imagery during a geolocation investigation.
+            No single clue in the original photograph immediately revealed
+            the exact location.
+          </p>
+          <p>
+            Reverse image searching produced the initial lead, TikTok helped
+            identify the facility, YouTube provided an independent
+            ground-level perspective, and satellite imagery allowed the
+            physical layout to be matched and the exact coordinates to be
+            determined.
+          </p>
+          <p>
+            The challenge reinforced the importance of pivoting between
+            platforms and verifying a possible location through multiple
+            independent visual sources before reaching a final conclusion.
+          </p>
+        </section>
+      </article>
+      <p>
+        <a href="index.html#projects">
+          Back to Projects
+        </a>
+      </p>
+    </main>
+    <footer>
+      <p>&copy; 2026 Landen Makowski</p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js">
+    </script>
+    <script src="utilities.js"></script>
+  </body>
+</html>
